@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "157216474885",
+    "project_id": "voyage-control-sso",
+    "storage_bucket": "voyage-control-sso.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157216474885:android:f48061356af1cd4ffb596c",
+        "android_client_info": {
+          "package_name": "com.voyage_construction_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd8knsk-uc1LNleMfFVIoCc5Ku6ceNOw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

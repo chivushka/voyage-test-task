@@ -1,0 +1,100 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+use_frameworks! :linkage => :static
+$RNFirebaseAsStaticFramework = true
+platform :ios, '13.4'
+install! 'cocoapods', :deterministic_uuids => false
+
+
+target 'voyage_construction_mobile' do
+
+  rn_maps_path = '../node_modules/react-native-maps'
+pod 'react-native-google-maps', :path => rn_maps_path
+  pod 'OktaOidc', '~> 3.11.2'
+
+  
+  config = use_native_modules!
+
+  # Flags change depending on the env values.
+  flags = get_default_flags()
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # Hermes is now enabled by default. Disable by setting this flag to false.
+    # Upcoming versions of React Native may rely on get_default_flags(), but
+    # we make it explicit here to aid in the React Native upgrade process.
+    :hermes_enabled => true,
+    :fabric_enabled => false,
+    # Enables Flipper.
+    #
+    # Note that if you have use_frameworks! enabled, Flipper will not work and
+    # you should disable the next line.
+    # :flipper_configuration => FlipperConfiguration.enabled,
+    # An absolute path to your application root.
+    :app_path => "#{Pod::Config.instance.installation_root}/.."
+  )
+
+  target 'voyage_construction_mobileTests' do
+    inherit! :complete
+    # Pods for testing
+  end
+
+  target 'voyage_construction_mobileStage' do
+    inherit! :complete
+  end
+
+  target 'voyage_construction_mobileUat' do
+    inherit! :complete
+  end
+
+  # pre_install do |installer|
+  #   installer.pod_targets.each do |pod|
+  #     if !dynamic_frameworks.include?(pod.name)
+  #       puts "Overriding the static_framework? method for #{pod.name}"
+  #       def pod.static_framework?;
+  #         true
+  #       end
+  #       def pod.build_type;
+  #         Pod::BuildType.static_library
+  #       end
+  #     end
+  #   end
+  # end
+  # $static_framework = ['FlipperKit', 'Flipper', 'Flipper-Folly',
+  #    'CocoaAsyncSocket', 'ComponentKit', 'DoubleConversion',
+  #    'glog', 'Flipper-PeerTalk', 'Flipper-RSocket', 'Yoga', 'YogaKit',
+  #    'CocoaLibEvent', 'OpenSSL-Universal', 'boost-for-react-native']
+  
+  #  pre_install do |installer|
+  #    Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+  #    installer.pod_targets.each do |pod|
+  #        if $static_framework.include?(pod.name)
+  #          def pod.build_type;
+  #            Pod::Target::BuildType.static_library
+  #          end
+  #        end
+  #      end
+  # end
+  
+  post_install do |installer|
+    bitcode_strip_path = `xcrun --find bitcode_strip`.chop!
+    def strip_bitcode_from_framework(bitcode_strip_path, framework_relative_path)
+      framework_path = File.join(Dir.pwd, framework_relative_path)
+      command = "#{bitcode_strip_path} #{framework_path} -r -o #{framework_path}"
+      puts "Stripping bitcode: #{command}"
+      system(command)
+    end
+ 
+    framework_paths = [
+      "Pods/LogRocket/LogRocket.xcframework/ios-arm64/LogRocket.framework/LogRocket",
+      "Pods/hermes-engine/destroot/Library/Frameworks/macosx/hermes.framework/hermes",
+      "Pods/hermes-engine/destroot/Library/Frameworks/macosx/hermes.framework/Versions/Current/hermes",
+      "Pods/hermes-engine/destroot/Library/Frameworks/universal/hermes.xcframework/ios-arm64/hermes.framework/hermes",
+      "Pods/hermes-engine/destroot/Library/Frameworks/universal/hermes.xcframework/ios-arm64_x86_64-maccatalyst/hermes.framework/hermes"
+    ]
+ 
+    framework_paths.each do |framework_relative_path|
+      strip_bitcode_from_framework(bitcode_strip_path, framework_relative_path)
+    end
+  end
+end

@@ -1,26 +1,13 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios, {AxiosResponse} from 'axios';
 import {Alert} from 'react-native';
-import {
-  Contacts,
-  Project,
-} from '../../../Library/Utils/Types/ApiTypes/projectDetailsModels';
-import {
-  Owner,
-  ProjectsData,
-} from '../../../Library/Utils/Types/ApiTypes/projectModels';
 import {UserData} from '../../../Library/Utils/Types/ApiTypes/userModels';
 import {ApiUrl} from '../../Utils/ApiUrl';
+import {get} from '../../ApiService';
 
 export const getUserData = async () => {
-  const token: string | null = await AsyncStorage.getItem('userToken');
-  const response: AxiosResponse<UserData> = await axios(
-    ApiUrl.authModule.authUserApi,
-    {
-      headers: {Authorization: `JWT ${token}`},
-    },
-  );
-  return response.data;
+  const response = await get<UserData>(ApiUrl.authModule.authUserApi);
+  return response.data as UserData;
 };
 
 export const getSitesData = async () => {
@@ -48,7 +35,7 @@ export const getProjectList = async (page = 1) => {
 
   const link = `${ApiUrl.authModule.userProjectList}?page=${page}&ref=${user.ref}&region=1`;
 
-  const response: AxiosResponse<ProjectsData> = await axios.get(link, {
+  const response: AxiosResponse<any> = await axios.get(link, {
     headers: {Authorization: `JWT ${token}`},
   });
 
@@ -85,13 +72,13 @@ export const getContactsData = async (ref: string) => {
   const token: string | null = await AsyncStorage.getItem('userToken');
   const siteId = await getSiteId();
   try {
-    const contactsRes: AxiosResponse<Contacts> = await axios(
+    const contactsRes: AxiosResponse<any> = await axios(
       `${ApiUrl.siteManagement.getSiteList}${siteId}/contacts/?is_active=true&project=${ref}`,
       {
         headers: {Authorization: `JWT ${token}`},
       },
     );
-    return contactsRes.data as Contacts;
+    return contactsRes.data as any;
   } catch (e: any) {
     if (
       e.response.data.error ===
@@ -109,7 +96,7 @@ export const getSelectedProjData = async (ref: string) => {
   const siteId = await getSiteId();
 
   try {
-    const mainRes: AxiosResponse<Project> = await axios(
+    const mainRes: AxiosResponse<any> = await axios(
       `${ApiUrl.siteManagement.getSiteDetail}${ref}/?project=${ref}`,
       {
         headers: {Authorization: `JWT ${token}`},
@@ -157,11 +144,8 @@ export const getDetailsData = async () => {
   const ref = await AsyncStorage.getItem('selectedRef');
   const token: string | null = await AsyncStorage.getItem('userToken');
   try {
-    const mainRes = await axios(
-      `${ApiUrl.profileModule.addUserDetail}?project=${ref}`,
-      {
-        headers: {Authorization: `JWT ${token}`},
-      },
+    const mainRes = await get<any>(
+      `${ApiUrl.profileModule.addUserDetail}?project=${ref}`
     );
 
     return mainRes.data;
@@ -174,7 +158,7 @@ export const getDetailsData = async () => {
     }
   }
 };
-export const postDetailsData = async (body: Owner) => {
+export const postDetailsData = async (body: any) => {
   const ref = await AsyncStorage.getItem('selectedRef');
   const token: string | null = await AsyncStorage.getItem('userToken');
 

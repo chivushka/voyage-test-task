@@ -77,6 +77,24 @@ pod 'react-native-google-maps', :path => rn_maps_path
   # end
   
   post_install do |installer|
+    time_h = 'Pods/RCT-Folly/folly/portability/Time.h'
+    if File.exist?(time_h)
+      text = File.read(time_h)
+      new_text = text.gsub(
+        "#if !defined(_WIN32)\ntypedef uint8_t clockid_t;\nextern \"C\" int clock_gettime(clockid_t clk_id, struct timespec* ts);\nextern \"C\" int clock_getres(clockid_t clk_id, struct timespec* ts);\n#endif",
+        "#if !defined(_WIN32) && !defined(__APPLE__)\ntypedef uint8_t clockid_t;\nextern \"C\" int clock_gettime(clockid_t clk_id, struct timespec* ts);\nextern \"C\" int clock_getres(clockid_t clk_id, struct timespec* ts);\n#endif"
+      )
+      File.write(time_h, new_text)
+    end
+
+    boost_hash_h = 'Pods/boost/boost/container_hash/hash.hpp'
+    if File.exist?(boost_hash_h)
+      text = File.read(boost_hash_h)
+      new_text = text.gsub(
+        /struct hash_base\s*:\s*std::unary_function<\s*T\s*,\s*std::size_t\s*>/, 'struct hash_base')
+      File.write(boost_hash_h, new_text)
+    end
+
     bitcode_strip_path = `xcrun --find bitcode_strip`.chop!
     def strip_bitcode_from_framework(bitcode_strip_path, framework_relative_path)
       framework_path = File.join(Dir.pwd, framework_relative_path)

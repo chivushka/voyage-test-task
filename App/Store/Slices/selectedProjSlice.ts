@@ -1,15 +1,20 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import { ProjectsData, Result } from '../../Library/Utils/Types/ApiTypes/projectModels';
-import {UserData} from '../../Library/Utils/Types/ApiTypes/userModels';
+import { UserProject } from '../../Library/Utils/Types/ApiTypes/userModels';
 
-const initialState: string = '';
+interface SelectedProjState {
+  selectedProject: UserProject | null;
+}
+
+const initialState: SelectedProjState = {
+  selectedProject: null,
+};
 
 const selectedProjReducer = createSlice({
   name: 'selectedProjData',
-  initialState: initialState,
+  initialState,
   reducers: {
-    addSelectedProj: (state, action: PayloadAction<string>) => {
-      state = action.payload;
+    addSelectedProj: (state, action: PayloadAction<UserProject>) => {
+      state.selectedProject = action.payload;
     },
   },
 });

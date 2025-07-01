@@ -1,6 +1,7 @@
 import React, { FC, useCallback, useEffect, useState } from 'react';
 import { NavigationContainer, } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { navigationRef } from './NavigationService';
 
 import { monoColor, primaryColor } from '../Assets/Styles/styles';
 
@@ -26,30 +27,30 @@ import {
 } from '../Store/Slices/authSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-import { getPreferencesData, getProjectList, getProjectSettings, getUsersData } from '../Network/ApiActions/UserActions/userActions';
+import { getPreferencesData, getProjectSettings, getUsersData } from '../Network/ApiActions/UserActions/userActions';
 import { addUserData } from '../Store/Slices/userInfoSlice';
 import { useTranslation } from 'react-i18next';
-
+import { fetchProjects } from '../Library/Utils/projectUtils';
 
 import { OrganizationAdmin } from '../Library/Utils/Types/ApiTypes/userModels';
 
-
 import { projectSettingsActions } from '../Store/Slices/projectSettingsSlice';
-import { addProjectsData } from '../Store/Slices/projectsInfoSlice';
+import Logout from '../Components/Screens/Login/LogoutScreen/Logout';
+import CurrentProj from '../Components/Screens/Login/CurrentProject/CurrentProject';
 
 const UnloggedTab = createBottomTabNavigator();
+const LoggedTab = createBottomTabNavigator();
 const GeneralTab = createBottomTabNavigator();
-
-
 
 export enum BottomTabScreens {
   loginScreenName = 'UnLogged',
+  logoutScreenName = 'Logout',
   chooseProjectScreenName = 'Choose Project',
   forgotPassScreenName = 'Forgot Password',
   mailSentScreenName = 'Mail sent',
   resetPasswordScreenName = 'Reset Password',
   resetDoneScreenName = 'Reset Done',
-
+  projectCurrentScreen = 'Project Current',
   projectBookingsScreen = 'Project Bookings',
 }
 
@@ -60,10 +61,8 @@ const LoggedTabNavigator = () => {
     {} as OrganizationAdmin
   );
 
-
   const bootstrapProjectSettings = async () => {
     const { results } = await getProjectSettings();
-
     dispatch(projectSettingsActions.saveSettings(results))
   }
 
@@ -84,7 +83,21 @@ const LoggedTabNavigator = () => {
       style={{ flex: 1 }}
       keyboardVerticalOffset={Platform.OS === 'ios' ? -100 : -30}
     >
-      <></>
+      <LoggedTab.Navigator
+        screenOptions={() => ({
+          headerShown: false,
+          tabBarActiveTintColor: primaryColor,
+          tabBarInactiveTintColor: monoColor,
+        })}
+      >
+        <LoggedTab.Screen
+          name={BottomTabScreens.projectCurrentScreen}
+          component={CurrentProj}
+          options={{
+            tabBarLabel: 'Home',
+          }}
+        />
+      </LoggedTab.Navigator>
     </KeyboardAvoidingView>
   );
 };
@@ -138,6 +151,7 @@ const UnloggedTabNavigator = () => {
 const Navigation: FC = () => {
   const loginState = useAppSelector((state) => state.loginState);
   const dispatch = useAppDispatch();
+  const projectsFromStore = useAppSelector((state) => state.projectsData.items);
 
   useEffect(() => {
     isLogged();
@@ -145,8 +159,6 @@ const Navigation: FC = () => {
   }, []);
 
   const onBootstrap = useCallback(async () => {
-
-
     if (loginState.isLogged) {
       const data = await getPreferencesData();
 
@@ -154,21 +166,15 @@ const Navigation: FC = () => {
         dispatch(addUserData(data.user));
       }
 
-      const timer = setInterval(async () => {
-
-        dispatch(addProjectsData((await getProjectList() as any).results))
-      }, 5000)
-
-      return () => {
-        clearInterval(timer)
+      if (!projectsFromStore || projectsFromStore.length === 0) {
+        await fetchProjects(dispatch, projectsFromStore);
       }
     }
-  }, [loginState.isLogged]);
+  }, [loginState.isLogged, dispatch, projectsFromStore]);
 
   useEffect(() => {
     onBootstrap();
   }, [onBootstrap]);
-
 
   const isLogged = async (): Promise<void> => {
     try {
@@ -194,10 +200,8 @@ const Navigation: FC = () => {
     }
   };
 
-
-
   return (
-    <NavigationContainer>
+    <NavigationContainer ref={navigationRef}>
       <GeneralTab.Navigator
         screenOptions={() => ({
           headerShown: false,
@@ -209,10 +213,17 @@ const Navigation: FC = () => {
         })}
       >
         {loginState.isLogged === true ? (
-          <GeneralTab.Screen
-            name={'LoggedNav'}
-            component={LoggedTabNavigator}
-          />
+          <>
+            <GeneralTab.Screen
+              name={'LoggedNav'}
+              component={LoggedTabNavigator}
+            />
+            <GeneralTab.Screen
+              name={BottomTabScreens.logoutScreenName}
+              component={Logout}
+            />
+          </>
+
         ) : (
           <GeneralTab.Screen
             name={'UnloggedNav'}

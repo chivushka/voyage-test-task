@@ -3,7 +3,7 @@ import {
   Auth0Login,
   UserLogin,
 } from '../../../Library/Utils/Types/ApiTypes/userModels';
-import {post, get, postAuth0} from '../../ApiService';
+import {post, get, postAuth0, postWithoutHeaders} from '../../ApiService';
 import {ApiUrl} from '../../Utils/ApiUrl';
 
 export const doUserLogin = async (body: UserLogin) => {
@@ -36,12 +36,8 @@ export const loginAuth0ApiUser = async (
 };
 
 export const forgotPassword = async (body: any) => {
-  // const res = await postWithoutHeaders(
-  //   ApiUrl.authModule.userForgotPassword,
-  //   body,
-  // );
-  const response = await axios.post(ApiUrl.authModule.userForgotPassword, body);
-  return response;
+  const res = await postWithoutHeaders(ApiUrl.authModule.userForgotPassword, body);
+  return res;
 };
 
 export const resetPassword = async (body: any) => {
@@ -52,6 +48,7 @@ export const resetPassword = async (body: any) => {
     return error.response;
   }
 };
+
 export const getUserProjectList = async (region: any) => {
   try {
     const res = await get(
@@ -61,4 +58,14 @@ export const getUserProjectList = async (region: any) => {
   } catch (error: any) {
     return error.response;
   }
+};
+
+export const verifyToken = async (body: any) => {
+  const res = await post(ApiUrl.authModule.verifyToken, body);
+  return res;
+};
+
+export const refreshTokenRequest = async (body: any) => {
+  const res = await post(ApiUrl.authModule.refreshToken, body);
+  return res;
 };

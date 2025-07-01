@@ -323,5 +323,7 @@
   "StartJourney": "旅程を開始",
   "EndJourney": "旅程を終了",
   "StopJourney": "旅程を停止",
-  "ContinueJourney": "旅程を続ける"
+  "ContinueJourney": "旅程を続ける",
+  "SetInvalidToken": "無効なトークンを設定",
+  "TryToGetUserData": "ユーザーデータを取得しようとしています"
 }

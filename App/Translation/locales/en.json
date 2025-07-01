@@ -335,5 +335,7 @@
   "StartJourney": "Start Journey",
   "EndJourney": "End Journey",
   "StopJourney": "Stop Journey",
-  "ContinueJourney": "Continue Journey"
+  "ContinueJourney": "Continue Journey",
+  "SetInvalidToken": "Set invalid token",
+  "TryToGetUserData": "Try to get user data"
 }

@@ -94,7 +94,7 @@ const LoggedTabNavigator = () => {
           name={BottomTabScreens.projectCurrentScreen}
           component={CurrentProj}
           options={{
-            tabBarLabel: 'Home',
+            tabBarLabel: t('Home') as string,
           }}
         />
       </LoggedTab.Navigator>

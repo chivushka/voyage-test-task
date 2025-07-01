@@ -1,18 +1,14 @@
 import { useAppDispatch, useAppSelector } from '../../../../Store/hooks';
 import {
-  changeAccessToken,
   changeIsLoading,
   changeIsLogged,
-  changeRefreshToken,
 } from '../../../../Store/Slices/authSlice';
 import { addSelectedProj } from '../../../../Store/Slices/selectedProjSlice';
-import { clearProjectsData } from '../../../../Store/Slices/projectsInfoSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
   getDetailsData,
 } from '../../../../Network/ApiActions/UserActions/userActions';
 import { fetchProjects as fetchProjectsUtil } from '../../../../Library/Utils/projectUtils';
-import { BottomTabScreens } from '../../../../Navigation/NestedNav';
 
 import { UserProject } from '../../../../Library/Utils/Types/ApiTypes/userModels';
 import { useEffect, useState, useCallback } from 'react';
@@ -22,7 +18,7 @@ interface IArgs {
   navigation: any;
 }
 
-export const useData = ({ navigation }: IArgs) => {
+export const useUserLoginData = ({ navigation }: IArgs) => {
   const dispatch = useAppDispatch();
   const [isProjectsLoading, setIsProjectsLoading] = useState(false);
   
@@ -31,7 +27,9 @@ export const useData = ({ navigation }: IArgs) => {
   const projectList = (projectsFromStore || []) as UserProject[];
 
   useEffect(() => {
-    fetchProjects();
+    if (!projectsFromStore || projectsFromStore.length === 0) {
+      fetchProjects();
+    }
     getDetails();
   }, []);
 
@@ -55,7 +53,7 @@ export const useData = ({ navigation }: IArgs) => {
 
   const fetchProjects = useCallback(async () => {
     if (projectsFromStore && projectsFromStore.length > 0) {
-      console.log('Projects already available in store, skipping API call');
+      console.log('Projects already available in store (loaded during login), skipping API call');
       return;
     }
 
@@ -65,6 +63,7 @@ export const useData = ({ navigation }: IArgs) => {
     }
     
     try {
+      console.log('Fetching projects from ChooseProject screen...');
       setIsProjectsLoading(true);
       dispatch(changeIsLoading(true));
 
@@ -72,6 +71,8 @@ export const useData = ({ navigation }: IArgs) => {
       
       if (!result.success) {
         Alert.alert('Error', result.error || 'Failed to load projects. Please try again.');
+      } else {
+        console.log('Projects fetched successfully from ChooseProject screen');
       }
     } catch (error: any) {
       console.error('Error fetching projects:', error);
@@ -82,18 +83,6 @@ export const useData = ({ navigation }: IArgs) => {
     }
   }, [dispatch, isProjectsLoading, projectsFromStore]);
 
-  const logOut = useCallback(() => {
-    AsyncStorage.removeItem('userToken');
-    AsyncStorage.removeItem('refreshToken');
-    AsyncStorage.removeItem('selectedRef');
-    dispatch(changeIsLoading(true));
-    dispatch(changeAccessToken(null));
-    dispatch(changeRefreshToken(null));
-    dispatch(changeIsLogged(false));
-    dispatch(clearProjectsData());
-    navigation.navigate(BottomTabScreens.loginScreenName);
-    dispatch(changeIsLoading(false));
-  }, [dispatch, navigation]);
 
   const navToProject = useCallback((ref: string): void => {
     const selectedProject = projectList.find(item => item.ref === ref);
@@ -109,9 +98,8 @@ export const useData = ({ navigation }: IArgs) => {
   return {
     projectList,
     navToProject,
-    logOut,
     isProjectsLoading,
     hasProjects: projectList.length > 0,
     refetchProjects: fetchProjects,
   }
-}
+} 

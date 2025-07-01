@@ -7,6 +7,10 @@ import App from './App';
 import {name as appName} from './app.json';
 import 'react-native-gesture-handler';
 import 'react-native-url-polyfill/auto';
+
+if (__DEV__) {
+  import('./ReactotronConfig').then(() => console.log('Reactotron Configured'));
+}
 import PushNotification from 'react-native-push-notification';
 
 PushNotification.configure({

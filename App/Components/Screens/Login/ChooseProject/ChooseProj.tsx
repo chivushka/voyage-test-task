@@ -4,12 +4,14 @@ import Layout from '../../../Core/Layout/Layout';
 import Button from '../../../Ui/Button';
 import ProjectItem from './ProjectItem';
 import InfoSection from '../LoginScreen/InfoSection';
-import { useData } from './useData';
+import { useUserLoginData } from '../Hooks/useUserLoginData';
 import { useTranslation } from 'react-i18next';
+import { useAuth } from '../../../../Library/Hooks/useAuth';
 
 const ChooseProj = ({ navigation }: any) => {
   const { t } = useTranslation();
-  const { projectList, navToProject, logOut } = useData({ navigation })
+  const { projectList, navToProject } = useUserLoginData({ navigation })
+  const { logout } = useAuth();
 
   return (
     <Layout custom={styles.loginScreen}>
@@ -34,7 +36,7 @@ const ChooseProj = ({ navigation }: any) => {
         disabled={false}
         title={t('LogOut')}
         outlined={true}
-        handleClick={logOut}
+        handleClick={logout}
       />
     </Layout>
   );

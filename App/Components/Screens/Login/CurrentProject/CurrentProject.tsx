@@ -7,9 +7,12 @@ import { useAppSelector } from '../../../../Store/hooks';
 import { setAsyncStorage } from '../../../../Network/ApiService';
 import Button from '../../../Ui/Button';
 import { getUserData } from '../../../../Network/ApiActions/UserActions/userActions';
+import { useAuth } from '../../../../Library/Hooks/useAuth';
+
 const CurrentProj = ({ navigation }: any) => {
   const { t } = useTranslation();
   const selectedProject = useAppSelector((state) => state.selectedProjData.selectedProject);
+  const {logout} = useAuth();
   
   const changeToken = ()=>{
     setAsyncStorage('userToken', 'invalidToken');
@@ -25,8 +28,14 @@ const CurrentProj = ({ navigation }: any) => {
     <Layout custom={styles.loginScreen}>
       <View style={{ height: '90%', display: 'flex', flexDirection: 'column' }}>
         <InfoSection title={selectedProject?.name || t('ChooseProject')} subTitle={selectedProject?.organization?.name || t('SelectProject')} />
-        <Button title="Set invalid token" handleClick={changeToken} propStyles={{ marginTop: 10 }}/>
-        <Button title="Try to get user data" handleClick={tryToGetUserData} propStyles={{ marginTop: 10 }}/>
+        <Button title={t('SetInvalidToken')} handleClick={changeToken} propStyles={{ marginTop: 10 }}/>
+        <Button title={t('TryToGetUserData')} handleClick={tryToGetUserData} propStyles={{ marginTop: 10 }}/>
+        <Button
+        disabled={false}
+        title={t('LogOut')}
+        outlined={true}
+        handleClick={logout}
+      />
       </View>
     </Layout>
   );

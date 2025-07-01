@@ -1,11 +1,11 @@
 import {ActivityIndicator} from 'react-native';
 import React, {FC, useEffect} from 'react';
-import { useData } from '../ChooseProject/useData';
+import { useAuth } from '../../../../Library/Hooks/useAuth';
 
 const Logout: FC = ({ navigation }: any) => {
-    const {logOut} = useData({navigation});
+    const {logout} = useAuth();
     useEffect(() => {
-        logOut();
+        logout();
     }, []);
   return (
     <ActivityIndicator />

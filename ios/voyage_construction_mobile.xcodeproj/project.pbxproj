@@ -11,8 +11,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		189AE40C8BFA66514B29A380 /* Pods_voyage_construction_mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240598159B8B8DDC512C16A2 /* Pods_voyage_construction_mobile.framework */; };
-		3E78701DD9C0F748A7C19DB7 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		3E78701DD9C0F748A7C19DB7 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		440F15742C592F26004118E5 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		440F15752C592F26004118E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		440F15792C592F26004118E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -28,12 +27,13 @@
 		44886AC82D9F1A6A00B3C321 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 44C4B2BA2D130B210097C290 /* main.jsbundle */; };
 		44886AC92DA1218F00B3C321 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 44C4B2BA2D130B210097C290 /* main.jsbundle */; };
 		44C4B2BB2D130B210097C290 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 44C4B2BA2D130B210097C290 /* main.jsbundle */; };
-		7F55EA67ED4E49ADC9D2982E /* Pods_voyage_construction_mobile_voyage_construction_mobileUat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F790F7F14FB9CE137429FB3F /* Pods_voyage_construction_mobile_voyage_construction_mobileUat.framework */; };
-		989DC5BC7306513303BB4EC3 /* Pods_voyage_construction_mobile_voyage_construction_mobileStage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43659D6B18944D765B49A516 /* Pods_voyage_construction_mobile_voyage_construction_mobileStage.framework */; };
+		48F245812D836A7D8C55D837 /* Pods_voyage_construction_mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C768F8EE18FAD01BC3823D8 /* Pods_voyage_construction_mobile.framework */; };
+		583C21BC4406B68F779E5F13 /* Pods_voyage_construction_mobile_voyage_construction_mobileStage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B17A82A665ABB3CE76D425 /* Pods_voyage_construction_mobile_voyage_construction_mobileStage.framework */; };
+		D3E9CA6A46577DD8E17F13BE /* Pods_voyage_construction_mobile_voyage_construction_mobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1B9CF4FB0B1E02886DB921 /* Pods_voyage_construction_mobile_voyage_construction_mobileTests.framework */; };
 		D720FE70290C0E370050700E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D720FE6F290C0E370050700E /* GoogleService-Info.plist */; };
 		D7A433BB290EBA9700D35EF5 /* Splash.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A433BA290EBA9700D35EF5 /* Splash.xcassets */; };
 		D7A433BD290EC06800D35EF5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A433BC290EC06800D35EF5 /* Launch Screen.storyboard */; };
-		FC581C57BA14520BADEE4B41 /* Pods_voyage_construction_mobile_voyage_construction_mobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6777AB63D6E418AED5AA7CA2 /* Pods_voyage_construction_mobile_voyage_construction_mobileTests.framework */; };
+		E5A1C870C91BA69E480B8544 /* Pods_voyage_construction_mobile_voyage_construction_mobileUat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B151914D34F4ABA50E2AD73 /* Pods_voyage_construction_mobile_voyage_construction_mobileUat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,37 +50,33 @@
 		00E356EE1AD99517003FC87E /* voyage_construction_mobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voyage_construction_mobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* voyage_construction_mobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = voyage_construction_mobileTests.m; sourceTree = "<group>"; };
-		099A39DF73944EB89DAF161E /* Pods-voyage_construction_mobile-voyage_construction_mobile_stage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobile_stage.debug.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobile_stage/Pods-voyage_construction_mobile-voyage_construction_mobile_stage.debug.xcconfig"; sourceTree = "<group>"; };
-		09CEA7F9318BC807C5459BBF /* Pods-voyage_construction_mobile-voyage_construction_mobile_uat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobile_uat.debug.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobile_uat/Pods-voyage_construction_mobile-voyage_construction_mobile_uat.debug.xcconfig"; sourceTree = "<group>"; };
+		0A8DA240E17A08F0F5E810FE /* Pods-voyage_construction_mobile-voyage_construction_mobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobileTests.release.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileTests/Pods-voyage_construction_mobile-voyage_construction_mobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* voyage_construction_mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voyage_construction_mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = voyage_construction_mobile/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = voyage_construction_mobile/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = voyage_construction_mobile/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = voyage_construction_mobile/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = voyage_construction_mobile/main.m; sourceTree = "<group>"; };
-		240598159B8B8DDC512C16A2 /* Pods_voyage_construction_mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voyage_construction_mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42BB0E73276CB936113520FF /* Pods-voyage_construction_mobile-voyage_construction_mobile_stage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobile_stage.release.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobile_stage/Pods-voyage_construction_mobile-voyage_construction_mobile_stage.release.xcconfig"; sourceTree = "<group>"; };
-		43659D6B18944D765B49A516 /* Pods_voyage_construction_mobile_voyage_construction_mobileStage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voyage_construction_mobile_voyage_construction_mobileStage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		440F15842C592F26004118E5 /* voyage_construction_mobileStage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voyage_construction_mobileStage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		440F15852C592F26004118E5 /* voyage_construction_mobileStage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "voyage_construction_mobileStage-Info.plist"; path = "/Users/eugene/Projects/voyage-construction-mobile/ios/voyage_construction_mobileStage-Info.plist"; sourceTree = "<absolute>"; };
 		440F159A2C592F85004118E5 /* voyage_construction_mobileUat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voyage_construction_mobileUat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		440F159B2C592F85004118E5 /* voyage_construction_mobileUat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "voyage_construction_mobileUat-Info.plist"; path = "/Users/eugene/Projects/voyage-construction-mobile/ios/voyage_construction_mobileUat-Info.plist"; sourceTree = "<absolute>"; };
 		44C4B2BA2D130B210097C290 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		58A28D825BC2690B9910E8A8 /* Pods-voyage_construction_mobile-voyage_construction_mobileUat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobileUat.release.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileUat/Pods-voyage_construction_mobile-voyage_construction_mobileUat.release.xcconfig"; sourceTree = "<group>"; };
-		6003E5EA3C5116EA7EBA223B /* Pods-voyage_construction_mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile.release.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile/Pods-voyage_construction_mobile.release.xcconfig"; sourceTree = "<group>"; };
-		662ACF5C38C2500E6637B13A /* Pods-voyage_construction_mobile-voyage_construction_mobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobileTests.release.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileTests/Pods-voyage_construction_mobile-voyage_construction_mobileTests.release.xcconfig"; sourceTree = "<group>"; };
-		6777AB63D6E418AED5AA7CA2 /* Pods_voyage_construction_mobile_voyage_construction_mobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voyage_construction_mobile_voyage_construction_mobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		695ECE9F997054B5E98D378E /* Pods-voyage_construction_mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile.debug.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile/Pods-voyage_construction_mobile.debug.xcconfig"; sourceTree = "<group>"; };
-		85520B81914B57FDE96331E7 /* Pods-voyage_construction_mobile-voyage_construction_mobileStage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobileStage.release.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage.release.xcconfig"; sourceTree = "<group>"; };
-		A5F8013C63A8296D437AB7AB /* Pods-voyage_construction_mobile-voyage_construction_mobileStage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobileStage.debug.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage.debug.xcconfig"; sourceTree = "<group>"; };
-		AB76259F0CC9534DE3E081A3 /* Pods-voyage_construction_mobile-voyage_construction_mobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobileTests.debug.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileTests/Pods-voyage_construction_mobile-voyage_construction_mobileTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C1F377654BEA217BC7FF70AD /* Pods-voyage_construction_mobile-voyage_construction_mobileUat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobileUat.debug.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileUat/Pods-voyage_construction_mobile-voyage_construction_mobileUat.debug.xcconfig"; sourceTree = "<group>"; };
+		4DC44C31F6B55993C6378CE9 /* Pods-voyage_construction_mobile-voyage_construction_mobileUat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobileUat.debug.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileUat/Pods-voyage_construction_mobile-voyage_construction_mobileUat.debug.xcconfig"; sourceTree = "<group>"; };
+		51E90F56F3BE820E68AC6A74 /* Pods-voyage_construction_mobile-voyage_construction_mobileStage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobileStage.release.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage.release.xcconfig"; sourceTree = "<group>"; };
+		63B17A82A665ABB3CE76D425 /* Pods_voyage_construction_mobile_voyage_construction_mobileStage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voyage_construction_mobile_voyage_construction_mobileStage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B151914D34F4ABA50E2AD73 /* Pods_voyage_construction_mobile_voyage_construction_mobileUat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voyage_construction_mobile_voyage_construction_mobileUat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BEC12F7DEF6F1E8FB13385E /* Pods-voyage_construction_mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile.debug.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile/Pods-voyage_construction_mobile.debug.xcconfig"; sourceTree = "<group>"; };
+		7C1BAC6F3DC983F4169AE77C /* Pods-voyage_construction_mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile.release.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile/Pods-voyage_construction_mobile.release.xcconfig"; sourceTree = "<group>"; };
+		807D532282E73EE62AFBC3B0 /* Pods-voyage_construction_mobile-voyage_construction_mobileStage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobileStage.debug.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage.debug.xcconfig"; sourceTree = "<group>"; };
+		8C768F8EE18FAD01BC3823D8 /* Pods_voyage_construction_mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voyage_construction_mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D420A03C46F5FF751854D7 /* Pods-voyage_construction_mobile-voyage_construction_mobileUat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobileUat.release.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileUat/Pods-voyage_construction_mobile-voyage_construction_mobileUat.release.xcconfig"; sourceTree = "<group>"; };
+		BB1B9CF4FB0B1E02886DB921 /* Pods_voyage_construction_mobile_voyage_construction_mobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voyage_construction_mobile_voyage_construction_mobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD98095906162F6F3FE023C /* Pods-voyage_construction_mobile-voyage_construction_mobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobileTests.debug.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileTests/Pods-voyage_construction_mobile-voyage_construction_mobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D720FE6F290C0E370050700E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D7A433BA290EBA9700D35EF5 /* Splash.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Splash.xcassets; sourceTree = "<group>"; };
 		D7A433BC290EC06800D35EF5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F790F7F14FB9CE137429FB3F /* Pods_voyage_construction_mobile_voyage_construction_mobileUat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voyage_construction_mobile_voyage_construction_mobileUat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC542628494439FD724B445E /* Pods-voyage_construction_mobile-voyage_construction_mobile_uat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voyage_construction_mobile-voyage_construction_mobile_uat.release.xcconfig"; path = "Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobile_uat/Pods-voyage_construction_mobile-voyage_construction_mobile_uat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC581C57BA14520BADEE4B41 /* Pods_voyage_construction_mobile_voyage_construction_mobileTests.framework in Frameworks */,
+				D3E9CA6A46577DD8E17F13BE /* Pods_voyage_construction_mobile_voyage_construction_mobileTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E78701DD9C0F748A7C19DB7 /* (null) in Frameworks */,
-				189AE40C8BFA66514B29A380 /* Pods_voyage_construction_mobile.framework in Frameworks */,
+				3E78701DD9C0F748A7C19DB7 /* BuildFile in Frameworks */,
+				48F245812D836A7D8C55D837 /* Pods_voyage_construction_mobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				989DC5BC7306513303BB4EC3 /* Pods_voyage_construction_mobile_voyage_construction_mobileStage.framework in Frameworks */,
+				583C21BC4406B68F779E5F13 /* Pods_voyage_construction_mobile_voyage_construction_mobileStage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F55EA67ED4E49ADC9D2982E /* Pods_voyage_construction_mobile_voyage_construction_mobileUat.framework in Frameworks */,
+				E5A1C870C91BA69E480B8544 /* Pods_voyage_construction_mobile_voyage_construction_mobileUat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,10 +152,10 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				6777AB63D6E418AED5AA7CA2 /* Pods_voyage_construction_mobile_voyage_construction_mobileTests.framework */,
-				240598159B8B8DDC512C16A2 /* Pods_voyage_construction_mobile.framework */,
-				43659D6B18944D765B49A516 /* Pods_voyage_construction_mobile_voyage_construction_mobileStage.framework */,
-				F790F7F14FB9CE137429FB3F /* Pods_voyage_construction_mobile_voyage_construction_mobileUat.framework */,
+				8C768F8EE18FAD01BC3823D8 /* Pods_voyage_construction_mobile.framework */,
+				63B17A82A665ABB3CE76D425 /* Pods_voyage_construction_mobile_voyage_construction_mobileStage.framework */,
+				BB1B9CF4FB0B1E02886DB921 /* Pods_voyage_construction_mobile_voyage_construction_mobileTests.framework */,
+				6B151914D34F4ABA50E2AD73 /* Pods_voyage_construction_mobile_voyage_construction_mobileUat.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -203,18 +199,14 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				695ECE9F997054B5E98D378E /* Pods-voyage_construction_mobile.debug.xcconfig */,
-				6003E5EA3C5116EA7EBA223B /* Pods-voyage_construction_mobile.release.xcconfig */,
-				AB76259F0CC9534DE3E081A3 /* Pods-voyage_construction_mobile-voyage_construction_mobileTests.debug.xcconfig */,
-				662ACF5C38C2500E6637B13A /* Pods-voyage_construction_mobile-voyage_construction_mobileTests.release.xcconfig */,
-				099A39DF73944EB89DAF161E /* Pods-voyage_construction_mobile-voyage_construction_mobile_stage.debug.xcconfig */,
-				42BB0E73276CB936113520FF /* Pods-voyage_construction_mobile-voyage_construction_mobile_stage.release.xcconfig */,
-				09CEA7F9318BC807C5459BBF /* Pods-voyage_construction_mobile-voyage_construction_mobile_uat.debug.xcconfig */,
-				FC542628494439FD724B445E /* Pods-voyage_construction_mobile-voyage_construction_mobile_uat.release.xcconfig */,
-				A5F8013C63A8296D437AB7AB /* Pods-voyage_construction_mobile-voyage_construction_mobileStage.debug.xcconfig */,
-				85520B81914B57FDE96331E7 /* Pods-voyage_construction_mobile-voyage_construction_mobileStage.release.xcconfig */,
-				C1F377654BEA217BC7FF70AD /* Pods-voyage_construction_mobile-voyage_construction_mobileUat.debug.xcconfig */,
-				58A28D825BC2690B9910E8A8 /* Pods-voyage_construction_mobile-voyage_construction_mobileUat.release.xcconfig */,
+				7BEC12F7DEF6F1E8FB13385E /* Pods-voyage_construction_mobile.debug.xcconfig */,
+				7C1BAC6F3DC983F4169AE77C /* Pods-voyage_construction_mobile.release.xcconfig */,
+				807D532282E73EE62AFBC3B0 /* Pods-voyage_construction_mobile-voyage_construction_mobileStage.debug.xcconfig */,
+				51E90F56F3BE820E68AC6A74 /* Pods-voyage_construction_mobile-voyage_construction_mobileStage.release.xcconfig */,
+				BDD98095906162F6F3FE023C /* Pods-voyage_construction_mobile-voyage_construction_mobileTests.debug.xcconfig */,
+				0A8DA240E17A08F0F5E810FE /* Pods-voyage_construction_mobile-voyage_construction_mobileTests.release.xcconfig */,
+				4DC44C31F6B55993C6378CE9 /* Pods-voyage_construction_mobile-voyage_construction_mobileUat.debug.xcconfig */,
+				B7D420A03C46F5FF751854D7 /* Pods-voyage_construction_mobile-voyage_construction_mobileUat.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -226,12 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "voyage_construction_mobileTests" */;
 			buildPhases = (
-				2C3255635E8ACD876285BBE7 /* [CP] Check Pods Manifest.lock */,
+				8A982328D7CF7ACDB6BD6E3B /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				2C3FFD2CB3F96F9319FABA45 /* [CP] Embed Pods Frameworks */,
-				FE58C99B3803553E7B740D0E /* [CP] Copy Pods Resources */,
+				0B68FF006389C97220E82DCD /* [CP] Embed Pods Frameworks */,
+				9715DC6D61C693C11E345DFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,15 +239,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "voyage_construction_mobile" */;
 			buildPhases = (
-				906D36A98E5E690208C9F0B8 /* [CP] Check Pods Manifest.lock */,
+				01BE5B3C01F121280A203511 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				5F6DADB009564FA479CA27A6 /* [CP] Embed Pods Frameworks */,
-				FDE519ED746ABF35A50E291B /* [CP] Copy Pods Resources */,
-				BF76B2490BED89DDC843EB46 /* [CP-User] [RNFB] Core Configuration */,
+				D4AFC16EDBD976767B287566 /* [CP] Embed Pods Frameworks */,
+				554222BD144E62654655B836 /* [CP] Copy Pods Resources */,
+				9EE53E21CAAC06C29D11C5C9 /* [CP-User] [RNFB] Core Configuration */,
 			);
 			buildRules = (
 			);
@@ -270,14 +262,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 440F15812C592F26004118E5 /* Build configuration list for PBXNativeTarget "voyage_construction_mobileStage" */;
 			buildPhases = (
-				440F15712C592F26004118E5 /* [CP] Check Pods Manifest.lock */,
+				FC82D51EC7BEECBDAC059AB5 /* [CP] Check Pods Manifest.lock */,
 				440F15722C592F26004118E5 /* Start Packager */,
 				440F15732C592F26004118E5 /* Sources */,
 				440F15762C592F26004118E5 /* Frameworks */,
 				440F15782C592F26004118E5 /* Resources */,
 				440F157D2C592F26004118E5 /* Bundle React Native code and images */,
-				440F157E2C592F26004118E5 /* [CP] Embed Pods Frameworks */,
-				440F157F2C592F26004118E5 /* [CP] Copy Pods Resources */,
+				B8D35517B656FE556ED8F887 /* [CP] Embed Pods Frameworks */,
+				902FD57927131A7F468147C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,14 +284,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 440F15972C592F85004118E5 /* Build configuration list for PBXNativeTarget "voyage_construction_mobileUat" */;
 			buildPhases = (
-				440F15872C592F85004118E5 /* [CP] Check Pods Manifest.lock */,
+				FB6A3BF6E2BC426815F7D533 /* [CP] Check Pods Manifest.lock */,
 				440F15882C592F85004118E5 /* Start Packager */,
 				440F15892C592F85004118E5 /* Sources */,
 				440F158C2C592F85004118E5 /* Frameworks */,
 				440F158E2C592F85004118E5 /* Resources */,
 				440F15932C592F85004118E5 /* Bundle React Native code and images */,
-				440F15942C592F85004118E5 /* [CP] Embed Pods Frameworks */,
-				440F15952C592F85004118E5 /* [CP] Copy Pods Resources */,
+				0A207E69F9291FFEC803D5F6 /* [CP] Embed Pods Frameworks */,
+				C9E13871017796B1EA4E2B8F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -411,7 +403,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		2C3255635E8ACD876285BBE7 /* [CP] Check Pods Manifest.lock */ = {
+		01BE5B3C01F121280A203511 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,14 +418,31 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-voyage_construction_mobile-voyage_construction_mobileTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-voyage_construction_mobile-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2C3FFD2CB3F96F9319FABA45 /* [CP] Embed Pods Frameworks */ = {
+		0A207E69F9291FFEC803D5F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileUat/Pods-voyage_construction_mobile-voyage_construction_mobileUat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileUat/Pods-voyage_construction_mobile-voyage_construction_mobileUat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileUat/Pods-voyage_construction_mobile-voyage_construction_mobileUat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B68FF006389C97220E82DCD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -448,28 +457,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileTests/Pods-voyage_construction_mobile-voyage_construction_mobileTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		440F15712C592F26004118E5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-voyage_construction_mobile-voyage_construction_mobileStage-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		440F15722C592F26004118E5 /* Start Packager */ = {
@@ -507,62 +494,6 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		440F157E2C592F26004118E5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		440F157F2C592F26004118E5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		440F15872C592F85004118E5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-voyage_construction_mobile-voyage_construction_mobileUat-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		440F15882C592F85004118E5 /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -598,24 +529,110 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		440F15942C592F85004118E5 /* [CP] Embed Pods Frameworks */ = {
+		554222BD144E62654655B836 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileUat/Pods-voyage_construction_mobile-voyage_construction_mobileUat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile/Pods-voyage_construction_mobile-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileUat/Pods-voyage_construction_mobile-voyage_construction_mobileUat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile/Pods-voyage_construction_mobile-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileUat/Pods-voyage_construction_mobile-voyage_construction_mobileUat-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile/Pods-voyage_construction_mobile-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		440F15952C592F85004118E5 /* [CP] Copy Pods Resources */ = {
+		8A982328D7CF7ACDB6BD6E3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-voyage_construction_mobile-voyage_construction_mobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		902FD57927131A7F468147C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9715DC6D61C693C11E345DFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileTests/Pods-voyage_construction_mobile-voyage_construction_mobileTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileTests/Pods-voyage_construction_mobile-voyage_construction_mobileTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileTests/Pods-voyage_construction_mobile-voyage_construction_mobileTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EE53E21CAAC06C29D11C5C9 /* [CP-User] [RNFB] Core Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[CP-User] [RNFB] Core Configuration";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | /usr/bin/head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    if ! python3 --version >/dev/null 2>&1; then echo \"python3 not found, firebase.json file processing error.\" && exit 1; fi\n    _JSON_OUTPUT_BASE64=$(python3 -c 'import json,sys,base64;print(base64.b64encode(bytes(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"', '\"'rb'\"').read())['${_JSON_ROOT}']), '\"'utf-8'\"')).decode())' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.app_data_collection_default_enabled\n  _APP_DATA_COLLECTION_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_data_collection_default_enabled\")\n  if [[ $_APP_DATA_COLLECTION_ENABLED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseDataCollectionDefaultEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_DATA_COLLECTION_ENABLED\")\")\n  fi\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.analytics_collection_deactivated\n  _ANALYTICS_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_collection_deactivated\")\n  if [[ $_ANALYTICS_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_DEACTIVATED\")\")\n  fi\n\n  # config.analytics_idfv_collection_enabled\n  _ANALYTICS_IDFV_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_idfv_collection_enabled\")\n  if [[ $_ANALYTICS_IDFV_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_IDFV_COLLECTION\")\")\n  fi\n\n  # config.analytics_default_allow_ad_personalization_signals\n  _ANALYTICS_PERSONALIZATION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_personalization_signals\")\n  if [[ $_ANALYTICS_PERSONALIZATION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_PERSONALIZATION\")\")\n  fi\n\n  # config.analytics_registration_with_ad_network_enabled\n  _ANALYTICS_REGISTRATION_WITH_AD_NETWORK=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_registration_with_ad_network_enabled\")\n  if [[ $_ANALYTICS_REGISTRATION_WITH_AD_NETWORK ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_REGISTRATION_WITH_AD_NETWORK_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_REGISTRATION_WITH_AD_NETWORK\")\")\n  fi\n\n  # config.google_analytics_automatic_screen_reporting_enabled\n  _ANALYTICS_AUTO_SCREEN_REPORTING=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_automatic_screen_reporting_enabled\")\n  if [[ $_ANALYTICS_AUTO_SCREEN_REPORTING ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAutomaticScreenReportingEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_SCREEN_REPORTING\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_collection_deactivated\n  _PERF_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_collection_deactivated\")\n  if [[ $_PERF_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_deactivated\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_DEACTIVATED\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.in_app_messaging_auto_colllection_enabled\n  _FIAM_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"in_app_messaging_auto_collection_enabled\")\n  if [[ $_FIAM_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseInAppMessagingAutomaticDataCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_FIAM_AUTO_INIT\")\")\n  fi\n\n  # config.app_check_token_auto_refresh\n  _APP_CHECK_TOKEN_AUTO_REFRESH=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_check_token_auto_refresh\")\n  if [[ $_APP_CHECK_TOKEN_AUTO_REFRESH ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAppCheckTokenAutoRefreshEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_CHECK_TOKEN_AUTO_REFRESH\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
+		};
+		B8D35517B656FE556ED8F887 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileStage/Pods-voyage_construction_mobile-voyage_construction_mobileStage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9E13871017796B1EA4E2B8F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -632,7 +649,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileUat/Pods-voyage_construction_mobile-voyage_construction_mobileUat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5F6DADB009564FA479CA27A6 /* [CP] Embed Pods Frameworks */ = {
+		D4AFC16EDBD976767B287566 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -649,7 +666,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile/Pods-voyage_construction_mobile-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		906D36A98E5E690208C9F0B8 /* [CP] Check Pods Manifest.lock */ = {
+		FB6A3BF6E2BC426815F7D533 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -664,25 +681,34 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-voyage_construction_mobile-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-voyage_construction_mobile-voyage_construction_mobileUat-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BF76B2490BED89DDC843EB46 /* [CP-User] [RNFB] Core Configuration */ = {
+		FC82D51EC7BEECBDAC059AB5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			inputFileListPaths = (
 			);
-			name = "[CP-User] [RNFB] Core Configuration";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-voyage_construction_mobile-voyage_construction_mobileStage-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | /usr/bin/head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    if ! python3 --version >/dev/null 2>&1; then echo \"python3 not found, firebase.json file processing error.\" && exit 1; fi\n    _JSON_OUTPUT_BASE64=$(python3 -c 'import json,sys,base64;print(base64.b64encode(bytes(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"', '\"'rb'\"').read())['${_JSON_ROOT}']), '\"'utf-8'\"')).decode())' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.app_data_collection_default_enabled\n  _APP_DATA_COLLECTION_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_data_collection_default_enabled\")\n  if [[ $_APP_DATA_COLLECTION_ENABLED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseDataCollectionDefaultEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_DATA_COLLECTION_ENABLED\")\")\n  fi\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.analytics_collection_deactivated\n  _ANALYTICS_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_collection_deactivated\")\n  if [[ $_ANALYTICS_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_DEACTIVATED\")\")\n  fi\n\n  # config.analytics_idfv_collection_enabled\n  _ANALYTICS_IDFV_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_idfv_collection_enabled\")\n  if [[ $_ANALYTICS_IDFV_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_IDFV_COLLECTION\")\")\n  fi\n\n  # config.analytics_default_allow_ad_personalization_signals\n  _ANALYTICS_PERSONALIZATION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_personalization_signals\")\n  if [[ $_ANALYTICS_PERSONALIZATION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_PERSONALIZATION\")\")\n  fi\n\n  # config.analytics_registration_with_ad_network_enabled\n  _ANALYTICS_REGISTRATION_WITH_AD_NETWORK=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_registration_with_ad_network_enabled\")\n  if [[ $_ANALYTICS_REGISTRATION_WITH_AD_NETWORK ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_REGISTRATION_WITH_AD_NETWORK_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_REGISTRATION_WITH_AD_NETWORK\")\")\n  fi\n\n  # config.google_analytics_automatic_screen_reporting_enabled\n  _ANALYTICS_AUTO_SCREEN_REPORTING=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_automatic_screen_reporting_enabled\")\n  if [[ $_ANALYTICS_AUTO_SCREEN_REPORTING ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAutomaticScreenReportingEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_SCREEN_REPORTING\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_collection_deactivated\n  _PERF_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_collection_deactivated\")\n  if [[ $_PERF_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_deactivated\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_DEACTIVATED\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.in_app_messaging_auto_colllection_enabled\n  _FIAM_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"in_app_messaging_auto_collection_enabled\")\n  if [[ $_FIAM_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseInAppMessagingAutomaticDataCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_FIAM_AUTO_INIT\")\")\n  fi\n\n  # config.app_check_token_auto_refresh\n  _APP_CHECK_TOKEN_AUTO_REFRESH=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_check_token_auto_refresh\")\n  if [[ $_APP_CHECK_TOKEN_AUTO_REFRESH ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAppCheckTokenAutoRefreshEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_CHECK_TOKEN_AUTO_REFRESH\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -701,40 +727,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FDE519ED746ABF35A50E291B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile/Pods-voyage_construction_mobile-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile/Pods-voyage_construction_mobile-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile/Pods-voyage_construction_mobile-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE58C99B3803553E7B740D0E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileTests/Pods-voyage_construction_mobile-voyage_construction_mobileTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileTests/Pods-voyage_construction_mobile-voyage_construction_mobileTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voyage_construction_mobile-voyage_construction_mobileTests/Pods-voyage_construction_mobile-voyage_construction_mobileTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -788,7 +780,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB76259F0CC9534DE3E081A3 /* Pods-voyage_construction_mobile-voyage_construction_mobileTests.debug.xcconfig */;
+			baseConfigurationReference = BDD98095906162F6F3FE023C /* Pods-voyage_construction_mobile-voyage_construction_mobileTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 8R5G32992B;
@@ -816,7 +808,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 662ACF5C38C2500E6637B13A /* Pods-voyage_construction_mobile-voyage_construction_mobileTests.release.xcconfig */;
+			baseConfigurationReference = 0A8DA240E17A08F0F5E810FE /* Pods-voyage_construction_mobile-voyage_construction_mobileTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -841,7 +833,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 695ECE9F997054B5E98D378E /* Pods-voyage_construction_mobile.debug.xcconfig */;
+			baseConfigurationReference = 7BEC12F7DEF6F1E8FB13385E /* Pods-voyage_construction_mobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -872,7 +864,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6003E5EA3C5116EA7EBA223B /* Pods-voyage_construction_mobile.release.xcconfig */;
+			baseConfigurationReference = 7C1BAC6F3DC983F4169AE77C /* Pods-voyage_construction_mobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -902,7 +894,7 @@
 		};
 		440F15822C592F26004118E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5F8013C63A8296D437AB7AB /* Pods-voyage_construction_mobile-voyage_construction_mobileStage.debug.xcconfig */;
+			baseConfigurationReference = 807D532282E73EE62AFBC3B0 /* Pods-voyage_construction_mobile-voyage_construction_mobileStage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -933,7 +925,7 @@
 		};
 		440F15832C592F26004118E5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85520B81914B57FDE96331E7 /* Pods-voyage_construction_mobile-voyage_construction_mobileStage.release.xcconfig */;
+			baseConfigurationReference = 51E90F56F3BE820E68AC6A74 /* Pods-voyage_construction_mobile-voyage_construction_mobileStage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -963,7 +955,7 @@
 		};
 		440F15982C592F85004118E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1F377654BEA217BC7FF70AD /* Pods-voyage_construction_mobile-voyage_construction_mobileUat.debug.xcconfig */;
+			baseConfigurationReference = 4DC44C31F6B55993C6378CE9 /* Pods-voyage_construction_mobile-voyage_construction_mobileUat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -994,7 +986,7 @@
 		};
 		440F15992C592F85004118E5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58A28D825BC2690B9910E8A8 /* Pods-voyage_construction_mobile-voyage_construction_mobileUat.release.xcconfig */;
+			baseConfigurationReference = B7D420A03C46F5FF751854D7 /* Pods-voyage_construction_mobile-voyage_construction_mobileUat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

@@ -10,6 +10,7 @@ export interface UserData {
   createdAt: string;
   modifiedAt: string;
   projects: UserProject[];
+  name: string;
 }
 
 export interface UserProject {

@@ -337,5 +337,6 @@
   "StopJourney": "Stop Journey",
   "ContinueJourney": "Continue Journey",
   "SetInvalidToken": "Set invalid token",
+  "SetInvalidRefreshToken": "Set invalid refresh token",
   "TryToGetUserData": "Try to get user data"
 }

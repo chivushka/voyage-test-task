@@ -16,12 +16,15 @@ const CurrentProj = ({ navigation }: any) => {
   
   const changeToken = ()=>{
     setAsyncStorage('userToken', 'invalidToken');
-    setAsyncStorage('refreshToken', 'invalidToken');
+  }
+
+  const changeRefreshToken = ()=>{
+    setAsyncStorage('refreshToken', 'invalidRefreshToken');
   }
 
   const tryToGetUserData = async ()=>{
     const response = await getUserData();
-    console.log(response);
+    Alert.alert(response.name);
   }
 
   return (
@@ -29,6 +32,7 @@ const CurrentProj = ({ navigation }: any) => {
       <View style={{ height: '90%', display: 'flex', flexDirection: 'column' }}>
         <InfoSection title={selectedProject?.name || t('ChooseProject')} subTitle={selectedProject?.organization?.name || t('SelectProject')} />
         <Button title={t('SetInvalidToken')} handleClick={changeToken} propStyles={{ marginTop: 10 }}/>
+        <Button title={t('SetInvalidRefreshToken')} handleClick={changeRefreshToken} propStyles={{ marginTop: 10 }}/>
         <Button title={t('TryToGetUserData')} handleClick={tryToGetUserData} propStyles={{ marginTop: 10 }}/>
         <Button
         disabled={false}
